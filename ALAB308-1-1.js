@@ -65,3 +65,9 @@ console.log(firstIsGreaterThanLast);
 // find remainder by dividing the last result by number 4
 let arithemticChain = ((n2 - n1) * n3) % n4;
 console.log(arithemticChain);
+
+// Change isOver25 so that you don't have to use !
+// in other logic comparisons
+const newIsOver25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
+const newisValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
+console.log(newisValid);
