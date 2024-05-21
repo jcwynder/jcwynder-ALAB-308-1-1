@@ -50,3 +50,16 @@ const dontDoThis =
   n2 != n3 &&
   n2 != n4 &&
   n3 != n4;
+
+// Check if all numbers are divible by 5
+if (n1 % 5 == 0) {
+  console.log("Divisible by 5");
+} else if (n2 % 5 == 0) {
+  console.log("Divisible by 5");
+} else if (n3 % 5 == 0) {
+  console.log("Divisible by 5");
+} else if (n4 % 5 == 0) {
+  console.log("Divisible by 5");
+} else {
+  console.log("All numbers are not divisible by 5");
+}
