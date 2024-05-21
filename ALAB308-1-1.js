@@ -80,6 +80,14 @@ const totalMiles = 1500;
 const fuelBudget = 150;
 const fuelPerGallon = 3;
 
-// Gallons of fuel needed for entire trip
+// Total gallons of fuel needed for entire trip
 const totalGallons = totalMiles / 30 + totalMiles / 28 + totalMiles / 23;
 console.log(totalGallons);
+
+// Will fuel budget cover total fuel expense?
+const doYouHaveEnough$ = fuelBudget >= totalGallons;
+console.log(doYouHaveEnough$);
+
+// Hours needed for total trip
+const totalHours = totalMiles / 55 + totalMiles / 60 + totalMiles / 75;
+console.log(totalHours);
