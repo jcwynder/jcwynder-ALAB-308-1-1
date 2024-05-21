@@ -1,3 +1,5 @@
+// 1. Math Problems
+
 // The initial numbers that must be verified.
 const n1 = 10;
 const n2 = 15;
@@ -71,3 +73,13 @@ console.log(arithemticChain);
 const newIsOver25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 const newisValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
 console.log(newisValid);
+
+// 2. Practical Math Problems
+
+const totalMiles = 1500;
+const fuelBudget = 150;
+const fuelPerGallon = 3;
+
+// Gallons of fuel needed for entire trip
+const totalGallons = totalMiles / 30 + totalMiles / 28 + totalMiles / 23;
+console.log(totalGallons);
