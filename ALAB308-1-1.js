@@ -36,7 +36,9 @@ const isUnique =
 const isValid = isSum50 && isTwoOdd && !isOver25 && isUnique;
 
 // Finally, log the results.
-console.log(isValid);
+console.log(
+  `The four numbers are valid according to the provided criteria: ${isValid}.`
+);
 
 // Here's another example of how this COULD be done,
 // but it SHOULD NOT be done this way. As programmers,
@@ -55,24 +57,30 @@ const dontDoThis =
 
 // Check if all numbers are divible by 5
 const isDivisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) == 0;
-console.log(isDivisibleBy5);
+console.log(
+  `The four numbers are divisible by 5 according to the provided criteria: ${isDivisibleBy5}.`
+);
 
 // Check if first number is larger than last
 const firstIsGreaterThanLast = n1 > n4;
-console.log(firstIsGreaterThanLast);
+console.log(
+  `The first number is greater than the last number according to the provided criteria: ${firstIsGreaterThanLast}.`
+);
 
 // Arithemtic chain:
 // subtract number 1 from the number 2
 // multiply the result by number 3
 // find remainder by dividing the last result by number 4
 let arithemticChain = ((n2 - n1) * n3) % n4;
-console.log(arithemticChain);
+console.log(`The remainder of the arithemtic chain is: ${arithemticChain}.`);
 
 // Change isOver25 so that you don't have to use !
 // in other logic comparisons
 const newIsOver25 = n1 < 25 || n2 < 25 || n3 < 25 || n4 < 25;
 const newisValid = isSum50 && isTwoOdd && newIsOver25 && isUnique;
-console.log(newisValid);
+console.log(
+  `Without using ! in isOver25, the alternative method used for is newIsOver25, and when used in newIsValid also results in: ${newisValid}.`
+);
 
 // 2. Practical Math Problems
 
@@ -82,12 +90,18 @@ const fuelPerGallon = 3;
 
 // Total gallons of fuel needed for entire trip
 const totalGallons = totalMiles / 30 + totalMiles / 28 + totalMiles / 23;
-console.log(totalGallons);
+console.log(
+  `The total amount of gallons needed for the trip is ${totalGallons} gallons.`
+);
 
 // Will fuel budget cover total fuel expense?
 const doYouHaveEnough$ = fuelBudget >= totalGallons;
-console.log(doYouHaveEnough$);
+console.log(
+  `Since your fuel budget is not greater than or equal to the total gallons needed for the trip, you being able to cover your trip is: ${doYouHaveEnough$}.`
+);
 
 // Hours needed for total trip
 const totalHours = totalMiles / 55 + totalMiles / 60 + totalMiles / 75;
-console.log(totalHours);
+console.log(
+  `The total amount of hours needed for the trip is ${totalHours} hours.`
+);
