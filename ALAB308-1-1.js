@@ -58,3 +58,10 @@ console.log(isDivisibleBy5);
 // Check if first number is larger than last
 const firstIsGreaterThanLast = n1 > n4;
 console.log(firstIsGreaterThanLast);
+
+// Arithemtic chain:
+// subtract number 1 from the number 2
+// multiply the result by number 3
+// find remainder by dividing the last result by number 4
+let arithemticChain = ((n2 - n1) * n3) % n4;
+console.log(arithemticChain);
