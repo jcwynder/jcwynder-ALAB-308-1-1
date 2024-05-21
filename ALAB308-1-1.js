@@ -52,14 +52,5 @@ const dontDoThis =
   n3 != n4;
 
 // Check if all numbers are divible by 5
-if (n1 % 5 == 0) {
-  console.log("Divisible by 5");
-} else if (n2 % 5 == 0) {
-  console.log("Divisible by 5");
-} else if (n3 % 5 == 0) {
-  console.log("Divisible by 5");
-} else if (n4 % 5 == 0) {
-  console.log("Divisible by 5");
-} else {
-  console.log("All numbers are not divisible by 5");
-}
+const isDivisibleBy5 = (n1 % 5) + (n2 % 5) + (n3 % 5) + (n4 % 5) == 0;
+console.log(isDivisibleBy5);
