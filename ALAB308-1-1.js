@@ -95,9 +95,9 @@ console.log(
 );
 
 // Will fuel budget cover total fuel expense?
-const doYouHaveEnough$ = fuelBudget >= totalGallons;
+const totalFuelCost = totalGallons * 3;
 console.log(
-  `Since your fuel budget is not greater than or equal to the total gallons needed for the trip, you being able to cover your trip is: ${doYouHaveEnough$}.`
+  `The total fuel cost is ${totalFuelCost}. Since ${totalFuelCost} is greater than ${fuelBudget}, you do not have enough to cover the trip.`
 );
 
 // Hours needed for total trip
