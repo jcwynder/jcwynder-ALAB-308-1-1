@@ -95,7 +95,7 @@ console.log(
 );
 
 // Will fuel budget cover total fuel expense?
-const totalFuelCost = totalGallons * 3;
+const totalFuelCost = totalGallons * fuelPerGallon;
 console.log(
   `The total fuel cost is ${totalFuelCost}. Since ${totalFuelCost} is greater than ${fuelBudget}, you do not have enough to cover the trip.`
 );
